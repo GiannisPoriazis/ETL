@@ -85,7 +85,7 @@ namespace AcsExam.Core.Services
             var footerParser = _parsers.First(p => p.CanParse("ENDFILE"));
             outputLines.Add(footerParser.Serialize(document, 0, 0));
 
-            File.WriteAllLines(outputPath, outputLines);
+            _fileSystem.WriteAllLines(outputPath, outputLines);
         }
     }
 }
