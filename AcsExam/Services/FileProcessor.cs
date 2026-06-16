@@ -68,12 +68,12 @@ namespace AcsExam.Core.Services
             var outputLines = new List<string>();
 
             var headerParser = _parsers.First(p => p.CanParse("BEGINFILE"));
-            outputLines.Add(headerParser.Serialize(document, 0, 0));
+            outputLines.Add(headerParser.Serialize(document));
 
             var customerParser = _parsers.First(p => p.CanParse("CUSTOMER"));
             for (int i = 0; i < document.Customers.Count; i++)
             {
-                outputLines.Add(customerParser.Serialize(document, i, 0));
+                outputLines.Add(customerParser.Serialize(document, i));
 
                 var transactionParser = _parsers.First(p => p.CanParse("TRANSACTION"));
                 for (int y = 0; y < document.Customers.ElementAt(i).Transactions.Count; y++)
@@ -83,7 +83,7 @@ namespace AcsExam.Core.Services
             }
 
             var footerParser = _parsers.First(p => p.CanParse("ENDFILE"));
-            outputLines.Add(footerParser.Serialize(document, 0, 0));
+            outputLines.Add(footerParser.Serialize(document));
 
             _fileSystem.WriteAllLines(outputPath, outputLines);
         }

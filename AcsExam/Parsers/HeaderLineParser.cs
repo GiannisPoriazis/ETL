@@ -29,7 +29,7 @@ namespace AcsExam.Core.Parsers
             }
         }
 
-        public string Serialize(ParsedDocument document, int _, int group)
+        public string Serialize(ParsedDocument document, int index = default, int group = default)
         {
             if (document.Metadata == null || !document.Metadata.Timestamp.HasValue)
             {

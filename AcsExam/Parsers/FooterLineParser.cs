@@ -53,7 +53,7 @@ namespace AcsExam.Core.Parsers
             parsedDocument.ExpectedTransactionCount = expectedTransactionCount;
         }
 
-        public string Serialize(ParsedDocument document, int _, int group)
+        public string Serialize(ParsedDocument document, int index = default, int group = default)
         {
             int customerCount = document.Customers.Count;
             int transactionCount = document.TotalTransactionsCount;

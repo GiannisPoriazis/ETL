@@ -33,7 +33,7 @@ namespace AcsExam.Tests.ProcessorTests
         }
 
         [Fact]
-        public void Process_ValidFile_ReturnsExpectedResults()
+        public void Deserialize_ValidFile_ReturnsExpectedResults()
         {
             // Arrange
             string filePath = "test.dat";
@@ -60,7 +60,7 @@ namespace AcsExam.Tests.ProcessorTests
         }
 
         [Fact]
-        public void Process_InvalidFile_ThrowsException()
+        public void Deserialize_InvalidFile_ThrowsException()
         {
             // Arrange
             string filePath = "test.dat";

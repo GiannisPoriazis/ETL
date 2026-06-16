@@ -21,6 +21,6 @@ namespace AcsExam.Core.Interfaces
         /// </summary>
         /// <param name="document">The source <see cref="ParsedDocument"/> holding the operational state.</param> 
         /// <returns>A formatted, pipe-delimited string representing the specified model item.</returns>
-        string Serialize(ParsedDocument document, int index, int group);
+        string Serialize(ParsedDocument document, int index = default, int group = default);
     }
 }

@@ -21,7 +21,7 @@ namespace AcsExam.Core.Parsers
             parsedDocument.Customers.Add(new CustomerRecord(parts[1], parts[2], parts[3]));
         }
 
-        public string Serialize(ParsedDocument document, int index, int _)
+        public string Serialize(ParsedDocument document, int index, int group = default)
         {
             if (index < 0 || index >= document.Customers.Count)
             {
