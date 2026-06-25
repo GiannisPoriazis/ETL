@@ -1,4 +1,0 @@
-<Solution>
-  <Project Path="../AcsExam.Tests/AcsExam.Tests.csproj" />
-  <Project Path="AcsExam.Core.csproj" />
-</Solution>

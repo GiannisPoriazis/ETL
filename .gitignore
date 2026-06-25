@@ -9,6 +9,6 @@
 *.log
 *.aps
 *.pdb
-**/ACS_EXAM_EXPORT_FILE.dat
+**/processed_output.dat
 .DS_Store
 thumbs.db
