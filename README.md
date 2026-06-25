@@ -1,6 +1,6 @@
-# ACS Assignment Project - ETL & Serialization Pipeline
+# ETL & Serialization Pipeline
 
-This repository contains a solution for the coding challenge. The application is built using **.NET 10** and executes a high-performance, unidirectional **ETL (Extract, Transform, Load)** pipeline alongside its structural inverse (Serialization).
+This repository contains a high-performance, memory-optimized **ETL (Extract, Transform, Load) Pipeline Engine** built with **.NET 10**. This application was developed as a **Portfolio Project** to demonstrate parsing, validating, and serializing hierarchical, time-stamped, pipe-delimited data streams.
 
 ## 🚀 Architectural Blueprint & Design Patterns
 
@@ -19,16 +19,16 @@ The project has been architected according to **Clean Architecture** and **SOLID
 ## 📂 Project Structure
 
 ```
-📦 AcsExam
-┣ 📂 AcsExam.Core # Pure Domain Logic & Architecture Contracts
+📦 ETL
+┣ 📂 ETL.Core # Pure Domain Logic & Architecture Contracts
 ┃ ┣ 📂 Extensions # Service Collection DI Registrations
 ┃ ┣ 📂 Interfaces # Abstraction Layer (IFileSystem, ILineParser, etc.)
 ┃ ┣ 📂 Models # Hierarchical Domain & Metadata Objects
 ┃ ┣ 📂 Parsers # Individual Stateless Line Resolvers (OCP Strategy)
 ┃ ┣ 📂 Services # File Processor Orchestrator & Console Presenter
-┣ ┣ 📜 ACS_EXAM_READ_FILE.dat # Source Challenge Input File
+┣ ┣ 📜 source_data.dat # Source Challenge Input File
 ┣ ┗ 📜 Program.cs # Modern DI Bootstrapper & Entry Point
-┗ 📂 AcsExam.Tests # xUnit Test Suite (TDD Behavior & In-Memory Mocks)
+┗ 📂 ETL.Tests # xUnit Test Suite (TDD Behavior & In-Memory Mocks)
 ```
 
 ## 🧪 Testing Strategy (TDD Approach)
