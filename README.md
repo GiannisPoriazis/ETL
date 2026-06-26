@@ -1,3 +1,7 @@
+![.NET Version](https://img.shields.io/badge/.NET-10.0-blue.svg)
+![Architecture](https://img.shields.io/badge/Architecture-Clean%20/%20SOLID-green.svg)
+![Testing](https://img.shields.io/badge/Testing-xUnit%20/%20TDD-orange.svg)
+
 # ETL & Serialization Pipeline
 
 This repository contains a high-performance, memory-optimized **ETL (Extract, Transform, Load) Pipeline Engine** built with **.NET 10**. This application was developed as a **Portfolio Project** to demonstrate parsing, validating, and serializing hierarchical, time-stamped, pipe-delimited data streams.

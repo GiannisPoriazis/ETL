@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AcsExam\ETL.Core.csproj" />
+    <ProjectReference Include="..\ETL\ETL.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

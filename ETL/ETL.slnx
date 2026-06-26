@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="../AcsExam.Tests/ETL.Tests.csproj" />
+  <Project Path="../ETL.Tests/ETL.Tests.csproj" />
   <Project Path="ETL.Core.csproj" />
 </Solution>
